@@ -1,4 +1,7 @@
-- [ ] Somatosensory system: Peripheral and central processing	孙衍刚
+
+# Neuroscience 
+
+- [ ][ ] Somatosensory system: Peripheral and central processing	孙衍刚
 - [ ] Olfactory and taste system	王佐仁
 - [ ] Auditory system and vestibular systems	刘志勇
 - [ ] Visual system I: retina	张翼凤
@@ -28,6 +31,3 @@
 - [ ] Developmental brain disorders	仇子龙
 - [ ] Cognitive control and brain disorders	叶   铮
 - [ ] Perspectives on the future of neuroscience	蒲慕明
-
-
-# exam2
