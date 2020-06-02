@@ -5,14 +5,14 @@
 
 # Neuroscience 
 
-- [ ] Somatosensory system: Peripheral and central processing	孙衍刚
+- [ ] Somatosensory system: Peripheral and central processing	孙衍刚 杜赟
 - [ ] Olfactory and taste system	王佐仁 刘博弈
-- [ ] Auditory system and vestibular systems	刘志勇
+- [ ] Auditory system and vestibular systems	刘志勇 任旻蕙
 - [ ] Visual system I: retina	张翼凤(n) 谢帅康
-- [ ] Visual system I: primary visual cortex	姚海珊
+- [ ] Visual system I: primary visual cortex	姚海珊 黄璨
 - [ ] Visual system III: Higher visual cortical processing	王   伟
 - [ ] Visual system IV: Object and face recognition	常   乐 张格培
-- [ ] Pain	张   旭(n)
+- [ ] Pain	张   旭(n)王林翰
 - [ ] Multisensory processing and sensorimotor transformation	顾   勇 单嘉玉
 - [ ] Attention and decision-making	杨天明
 - [ ] Motor system I: spinal reflex and motor cortex	崔   翯 孙瑜洁
@@ -21,7 +21,7 @@
 - [ ] Hypothalamus and innate behaviors	许晓鸿(n)戴雯怡
 - [ ] Autonomic systems	张   哲
 - [ ] Circadian rhythm sleep	张洪钧(n)
-- [ ] Control function sleep	徐   敏
+- [ ] Control function sleep	徐   敏 黄潞言
 - [ ] Emotional and reward systems	徐   春 曲雪彤
 - [ ] Learning and memory I: Molecular and cellular mechanisms	徐   春
 - [ ] ……………	李澄宇 王一韬
