@@ -10,13 +10,13 @@
 - [ ] Auditory system and vestibular systems	刘志勇 任旻蕙
 - [ ] Visual system I: retina	张翼凤(n) 谢帅康
 - [ ] Visual system I: primary visual cortex	姚海珊 黄璨
-- [ ] Visual system III: Higher visual cortical processing	王   伟
+- [ ] Visual system III: Higher visual cortical processing	王   伟 陈丹旎
 - [ ] Visual system IV: Object and face recognition	常   乐 张格培
 - [ ] Pain	张   旭(n)王林翰
 - [ ] Multisensory processing and sensorimotor transformation	顾   勇 单嘉玉
 - [ ] Attention and decision-making	杨天明
 - [ ] Motor system I: spinal reflex and motor cortex	崔   翯 孙瑜洁
-- [ ] Motor system II: voluntary movements	崔   翯
+- [ ] Motor system II: voluntary movements	崔   翯 肖永祥
 - [ ] Motor system III：Cerebellum and basal ganglia	杨天明
 - [ ] Hypothalamus and innate behaviors	许晓鸿(n)戴雯怡
 - [ ] Autonomic systems	张   哲
