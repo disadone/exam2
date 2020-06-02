@@ -1,7 +1,7 @@
 
 # Neuroscience 
 
-- [ ][ ] Somatosensory system: Peripheral and central processing	孙衍刚
+- [ ] Somatosensory system: Peripheral and central processing	孙衍刚
 - [ ] Olfactory and taste system	王佐仁
 - [ ] Auditory system and vestibular systems	刘志勇
 - [ ] Visual system I: retina	张翼凤
