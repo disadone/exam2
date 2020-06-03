@@ -20,7 +20,7 @@
 - [ ] Motor system III：Cerebellum and basal ganglia	杨天明
 - [ ] Hypothalamus and innate behaviors	许晓鸿(n)戴雯怡
 - [ ] Autonomic systems	张   哲
-- [ ] Circadian rhythm sleep	张洪钧(n)
+- [ ] Circadian rhythm sleep	张洪钧(n) 基正邦
 - [ ] Control function sleep	徐   敏 黄潞言
 - [ ] Emotional and reward systems	徐   春 曲雪彤
 - [ ] Learning and memory I: Molecular and cellular mechanisms	徐   春
@@ -29,8 +29,8 @@
 - [ ] …	龚   能
 - [ ] Computational neuroscience	严   军
 - [ ] Primate reproductive biology	孙   强
-- [ ] Monkey models of brain diseases	刘   真
-- [ ] Neuron-glia interactions and neuroimmune system	周嘉伟(n)
+- [ ] Monkey models of brain diseases	刘   真 魏瑜
+- [ ] Neuron-glia interactions and neuroimmune system	周嘉伟(n) 石卉
 - [ ] Neuropsychiatric disorders	熊志奇 何俊彦
 - [ ] Developmental brain disorders	仇子龙(n)丁晴
 - [ ] Cognitive control and brain disorders	叶   铮
