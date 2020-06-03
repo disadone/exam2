@@ -25,7 +25,7 @@
 - [ ] Circadian rhythm sleep	张洪钧(n) 基正邦
 - [ ] Control function sleep	徐   敏 黄潞言
 - [ ] Emotional and reward systems	徐   春 曲雪彤
-- [ ] Learning and memory I: Molecular and cellular mechanisms	徐   春
+- [ ] Learning and memory I: Molecular and cellular mechanisms	徐   春 魏川耀
 - [ ] ……………	李澄宇 王一韬
 - [ ] .	王立平
 - [ ] …	龚   能
