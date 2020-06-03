@@ -29,7 +29,7 @@
 - [ ] ……………	李澄宇 王一韬
 - [ ] .	王立平
 - [ ] …	龚   能
-- [ ] Computational neuroscience	严   军
+- [ ] Computational neuroscience	严   军 管毓恒
 - [ ] Primate reproductive biology	孙   强
 - [ ] Monkey models of brain diseases	刘   真 魏瑜
 - [ ] Neuron-glia interactions and neuroimmune system	周嘉伟(n) 石卉
