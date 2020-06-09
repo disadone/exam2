@@ -40,4 +40,4 @@
 - [ ] Cognitive control and brain disorders	叶   铮
 - [ ] Perspectives on the future of neuroscience	蒲慕明
 
-<img src="neuroscience.jpeg"/>
+<img src="./neuroscience.jpeg"/>
