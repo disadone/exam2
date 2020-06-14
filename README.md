@@ -1,5 +1,6 @@
 
 神经生物学下学期课件 http://78.141.211.202:8688/s/ip5Cr3PY5LCqLTf
+神经生物学整理的资料 http://78.141.211.202:8688/s/7abXdEEWpYEyQT9
 
 杜赟提供的(目前不知道是什么)
 链接：https://pan.baidu.com/s/1oLnWfTpTMrRLgAcAz3fbNg 
