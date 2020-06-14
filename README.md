@@ -37,7 +37,7 @@
 - [ ] Neuron-glia interactions and neuroimmune system	周嘉伟(n) 石卉
 - [ ] Neuropsychiatric disorders	熊志奇 何俊彦
 - [ ] Developmental brain disorders	仇子龙(n)丁晴
-- [ ] Cognitive control and brain disorders	叶   铮
+- [X] Cognitive control and brain disorders	叶   铮
 - [ ] Perspectives on the future of neuroscience	蒲慕明
 
 <img src="./neuroscience.jpeg"/>
