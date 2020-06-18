@@ -1,0 +1,171 @@
+---
+title: "2020生统题目预测及代码"
+author: "Yuheng_Guan"
+date: "2020/6/18"
+output:
+  word_document: default
+  html_document: default
+---
+本文档为根据数据猜测可能出的题目，以及程序，变量名和格式大家可以缓一缓。
+
+Q1. 数据形式：Gene_expression * sample (100genes*20samples),根据第三次作业最后一题猜测，可能出的题目有：
+1）画出某个gene的密度图(density plot)；
+2）画boxplot看数据的分布情况，以及异常值的去除；
+3）对数据按照样本进行标准化；
+4）如果题干中对sample进行了分类(如S1-S10为group1，S11-S20为group2)，则应该会对每个gene做差异表达分析，找出差异表达的基因，并进行多重检验矫正(method = 'bonferroni' or 'fdr'),进一步可能会根据fold change挑选可以用于分析的基因。
+(个人觉得3、4不会出，根据结果没有什么差异表达的，应该就是画画图)
+```{r}
+# 导入数据，路径需要更换
+data1 <- read.table('C:/Users/GYH/Desktop/data/Q1_gene_data.txt', header = T) 
+
+# 1) 对某个gene画密度图以及表征数据分布，如mean，variance等（以Gene3举例）：
+G3 <- as.numeric(data1[3,]) # 
+plot(density(G3), main = 'balabala')
+mean(G3) #均值
+median(G3) #中位数
+var(G3) #方差
+
+# 2）boxplot然后去除outlier，个人觉得很可能，因为G4里有两个明显的离群值105，跟作业里的离群值一样
+boxplot(data1, outline = T) #不去除离群值
+boxplot(data1, outline = F) #画图去除离群值
+data1_re <- data1
+data1_re[data1_re > 100] <- NA # 参考第三次作业答案
+boxplot(data1_re)
+
+# 3）标准化数据，本处采取除以样本总表达量的方法，函数可改
+data1.normalize <- apply(data1, 2, function(x) x/sum(x))
+   # or, 把函数写在外面,名字可改，return的内容可改，根据要求改
+Normalize <- function(x){
+  return(x/sum(x))
+}
+data1.normalize <- apply(data1, 2, Normalize)
+head(data1.normalize) #看一下效果
+
+# 4.1）用S1-S10以及S11-S20为两组举例t-test：
+DEtect1 <- function(x){
+  # 默认正态分布，检查方差齐性，返回t-test的p值
+  if(var.test(x[1:10], x[11:20])[[3]] >= 0.05){
+    return(t.test(x[1:10], x[11:20], var.equal = T)[[3]])
+  }
+  else{
+    return(t.test(x[1:10], x[11:20], var.equal = F)[[3]])
+  }
+}
+p.uncorrected <- apply(data1.normalize, 1, DEtect1)
+# 多重检验矫正
+p.corrected <- p.adjust(p.uncorrected, method = 'fdr') # method可选bonferroni/fdr
+which(p.corrected<0.05)
+
+# 4.2) 用anova检验，假设1-5，6-10，11-15，16-20是4组
+DEtect2 <- function(x){
+  # 默认正态分布，检查方差齐性，返回anova的p值
+  group <- gl(4, 5) # 产生4组，每组5个重复的标签,可改
+  tmp <- data.frame(gene = x, group = group)
+  if(bartlett.test(x ~ group)[[3]] < 0.05){
+    fit <- aov(data = tmp, x ~ group)
+    p <- summary(fit)[[1]][1,5]
+    return(p)
+  }
+  else{
+    fit <- oneway.test(data = tmp, x ~ group)
+    p <- fit$p.value
+    return(p)
+  }
+}
+
+p.uncorrected <- apply(data1.normalize, 1, DEtect2)
+# 多重检验矫正
+p.corrected <- p.adjust(p.uncorrected, method = 'fdr') # method可选bonferroni/fdr
+which(p.corrected<0.05)
+
+# 也可能非参数检验，wilcox.test()/kruskal.test()
+```
+
+Q2. 本题看数据形式为配对数据，可能为同一个人的左右手臂皮肤经过某种刺激如日照之后的对比，使用配对t检验。
+1）皮肤经过处理后有无差别（配对t检验，写出假设以及检验前提条件）；
+```{r}
+# 原假设：  经过处理后皮肤无差别(d = 0);
+# 备择假设：经过处理后出现差别(d != 0 or d > 0/d < 0), 单双尾看怎么问;
+data2 <- read.table('C:/Users/GYH/Desktop/data/Q2_skin_test.txt', header = T)
+attach(data2)
+
+# 检验数据是否服从正态分布,p<0.05则不服从
+shapiro.test(right) 
+shapiro.test(left)
+# 这里都服从正态分布故可以进行t检验
+
+t.test(right, left, paired = T, alternative = 'two.sided') # 根据题目更换alternative为less或greater,注意right和left的顺序影响greater/less
+# p = 0.006, 设alpha水平为0.05则p < 0.05, 拒绝原假设，出现差别；
+detach(data2)
+
+#step by step， 首先检验都是正态分布的；
+d = right - left # 计算差值
+# H0：d == 0
+# Ha: d != 0
+
+t <- (mean(d)-0)/(sd(d)/sqrt(15)) # 计算t统计量, mean(d)-0/标准误；
+df <- 15 - 1 # 服从自由度=14的t分布
+p <- (1 - pt(t, df = df))*2 # 双侧检验故*2, 单侧不用
+p < 0.05
+
+```
+
+Q3. 猜测双样本t-检验,应该不会step-by-step
+```{r}
+# H0: 平均数相等，mu1 == mu2
+# Ha：平均数不等, mu1 != mu2
+data3 <- read.csv('C:/Users/GYH/Desktop/data/Q3_SBP.csv', header = T)
+attach(data3)
+shapiro.test(follow_up_1)
+shapiro.test(follow_up_2)
+var.test(follow_up_1, follow_up_2) # 方差齐
+t.test(follow_up_1, follow_up_2, paired = F, var.equal = T)
+p > 0.05
+
+# 假设不服从正态分布，则用非参数检验
+wilcox.test(follow_up_1, follow_up_2, paired = F)
+detach(data3)
+# 不拒绝原假设，认为两组均值差不多
+```
+
+Q4. 单因素方差分析，可能step-by-step计算，然后TukeyHSD看哪些组有差异
+```{r}
+data4 <- read.csv('C:/Users/GYH/Desktop/data/Q4_antibiotic.csv', header = T)
+attach(data4)
+# H0: 每组处理的均值都相等
+# Ha：至少有一组的均值不等
+
+# 程序计算
+shapiro.test(percent) # 检验正态性
+bartlett.test(percent ~ antibiotic) # 检验方差齐性
+fit <- aov(data = data4, percent ~ antibiotic)
+summary(fit)
+p < 0.05
+# 拒绝原假设
+
+# step by step
+mean_total <- mean(percent)
+n <- nrow(data4)
+SStotal <- var(percent)*(n-1) # 总的SS
+
+mean_group <- as.numeric(aggregate(data4, by = list(antibiotic), mean)[,3])
+mean_group
+SSbetween <- sum(6 * (mean_group - mean_total)^2) # 组间SS
+
+SSwithin <- SStotal - SSbetween # 组内SS
+
+# (直接计算SSwithin：)
+tmp <- matrix(data4$percent, nrow = 6)
+SSwithin <- sum(apply(tmp, 2, function(x) sum((x-mean(x))^2)))
+SSwithin
+
+MSA <- SSbetween/3 # df1 = 3
+MSE <- SSwithin/20 # df2 = 20
+
+f <- MSA/MSE
+1 - pf(f, df1 = 3, df2 = 20)
+# 拒绝原假设
+
+TukeyHSD(fit)
+# Erythromycin-Chloramphenicol, Penicillin-Erythromycin, Tetracycline-Erythromycin组间有差异
+```
