@@ -1,0 +1,928 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     49900,        920]
+NotebookOptionsPosition[     48825,        894]
+NotebookOutlinePosition[     49157,        909]
+CellTagsIndexPosition[     49114,        906]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"TextGrid", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"(", GridBox[{
+      {"\"\<Cancer\:5b9a\:4e49\>\"", 
+       "\"\<\:6301\:7eed\:5206\:88c2\:590d\:5236\>\"", 
+       "\"\<\:4e00\:90e8\:5206\:7ec6\:80de\:53ef\:4ee5\:8fdb\:884c\:4e0d\:505c\
+\:7684\:5206\:88c2\:ff0c\:7a81\:7834\:7ec4\:7ec7\:754c\:9650\:ff0c\:4fb5\:72af\
+\:90bb\:8fd1\:7684\:7ec4\:7ec7\>\"", 
+       "\"\<\:91cd\:8981\:810f\:5668\:8870\:7aed\:548c\:75c5\:4eba\:6b7b\:4ea1\
+\>\"", "\[Placeholder]", "\[Placeholder]"},
+      {"SpanFromAbove", "\"\<\:7ec4\:7ec7\:6d78\:6da6\:548c\:8f6c\:79fb\>\"", 
+       "\"\<\:901a\:8fc7\:6dcb\:5df4\:7cfb\:7edf\:6216\:8840\:6db2\:5faa\:73af\
+\:7cfb\:7edf\:4fb5\:72af\:5230\:8fdc\:7aef\:7684\:7684\:7ec4\:7ec7\:5668\:5b98\
+\>\"", "SpanFromAbove", "\[Placeholder]", "\[Placeholder]"},
+      {"\"\<Hallmarks of Cancer\>\"", "SpanFromLeft", "SpanFromLeft", 
+       "SpanFromLeft", "SpanFromLeft", "\[Placeholder]"},
+      {"\[Placeholder]", 
+       "\"\<\:6301\:7eed\:5373\:83b7\:5f97\:589e\:6b96\:4fe1\:53f7\>\"", 
+       "\"\<\:81ea\:5206\:6ccc\:589e\:6b96\:523a\:6fc0\>\"", "SpanFromLeft", 
+       "SpanFromLeft", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", 
+       "\"\<\:65c1\:5206\:6ccc\:589e\:6b96\:523a\:6fc0\>\"", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", 
+       "\"\<\:63d0\:9ad8\:53d7\:4f53\:6c34\:5e73\>\"", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", 
+       "\"\<\:53d7\:4f53\:7ed3\:6784\:53d8\:5316\>\"", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", 
+       "\"\<\:7d2f\:79ef\:5f88\:591a\:7a81\:53d8\>\"", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", 
+       "\"\<\:53bb\:9664\:524a\:5f31\:589e\:6b96\:4fe1\:53f7\:8d1f\:53cd\:9988\
+\>\"", "\"\<PTEN\>\"", "\[Placeholder]", "\[Placeholder]"},
+      {"SpanFromAbove", 
+       "\"\<\:751f\:957f\:6291\:5236\:9003\:9038\:ff08\:89c4\:907f\:751f\:957f\
+\:6291\:5236\:ff09\>\"", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]"},
+      {"SpanFromAbove", "\"\<\:65e0\:9650\:590d\:5236\:80fd\:529b\>\"", 
+       "\"\<p53\:5931\:6d3b\:6027\:7a81\:53d8\>\"", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", 
+       "\"\<\:8fc7\:8868\:8fbe\:7aef\:7c92\:9176\>\"", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]"},
+      {"SpanFromAbove", "\"\<\:8bf1\:5bfc\:8840\:7ba1\:65b0\:751f\>\"", 
+       "\"\<\:591a\:79cd\:7ec6\:80de\:53c2\:4e0e\>\"", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]"},
+      {"SpanFromAbove", "\"\<\:4fb5\:88ad\:548c\:8f6c\:79fb\>\"", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"SpanFromAbove", 
+       "\"\<\:7ec6\:80de\:6b7b\:4ea1\:51cb\:4ea1\:7684\:62b5\:6297\:ff08\:62b5\
+\:6297\:7ec6\:80de\:6b7b\:4ea1\:ff09\>\"", "\[Placeholder]", 
+       "\"\<\:4e0b\:8c03\:51cb\:4ea1\:86cb\:767d\:5982p53\:7b49\>\"", 
+       "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\"\<\:4e0a\:8c03\:6297\:51cb\:4ea1\:86cb\:767d\:7684\:8868\:8fbe\:5982\
+BCL-2\\IAPs\>\"", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\"\<\:6fc0\:6d3b\:81ea\:566c\:548c\:574f\:6b7b\:5e2e\:52a9\:5b58\:6d3b\
+\>\"", "\[Placeholder]", "\[Placeholder]"},
+      {"SpanFromAbove", 
+       "\"\<\:57fa\:56e0\:7ec4\:4e0d\:7a33\:5b9a\:6027\:548c\:7a81\:53d8\>\"",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]"},
+      {"SpanFromAbove", 
+       "\"\<\:4fc3\:8fdb\:80bf\:7624\:708e\:6027\:5fae\:73af\:5883\>\"", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"SpanFromAbove", 
+       "\"\<\:907f\:514d\:514d\:75ab\:6467\:6bc1\:ff08\:514d\:75ab\:9003\:9038\
+\:ff09\>\"", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]"},
+      {"SpanFromAbove", 
+       "\"\<\:4ee3\:8c22\:5f02\:5e38\:3001\:91cd\:7f16\:7a0b\>\"", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\"\<\:80bf\:7624\:4ee3\:8c22\>\"", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\"\<\:7279\:70b9\>\"", 
+       "\"\<\:76f8\:8f83\:4e8e\:6b63\:5e38\:7ec4\:7ec7\:ff0c\:622a\:7136\:4e0d\
+\:540c\:7684\:4ee3\:8c22\:884c\:4e3a\>\"", "\[Placeholder]", "\[Placeholder]",
+        "\[Placeholder]", "\[Placeholder]"},
+      {"SpanFromAbove", 
+       "\"\<\:4ee3\:8c22\:5f02\:5e38\:666e\:904d\:5b58\:5728\:4e8e\:80bf\:7624\
+\:4e2d\:ff0c\:5e76\:5728\:5176\:53d1\:751f\:53d1\:5c55\:8d77\:4f5c\:7528\>\"",\
+ "\"\<\:53ef\:4ee5\:4e3a\:80bf\:7624\:7684\:6301\:7eed\:589e\:6b96\:63d0\:4f9b\
+\:6e90\:6e90\:4e0d\:65ad\:7684\:751f\:7269\:5927\:5206\:5b50\:5408\:6210\:539f\
+\:6599(\:8102\:8d28\:3001\:86cb\:767d\:8d28\:3001\:6838\:9178\:7b49)\>\"", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"SpanFromAbove", "SpanFromAbove", 
+       "\"\<\:5404\:79cd\:5e94\:6fc0\:538b\:529b\:5bfc\:81f4\:80bf\:7624\:5185\
+\:90e8\:5927\:91cfROS \:7684\:7d2f\:79ef,\:901a\:8fc7\:6fc0\:6d3b\:8fd8\:539f\
+\:6027\:4ee3\:8c22\:901a\:8def\:6765\:63d0\:4f9b\:8fd8\:539f\:80fd\:5e2e\:52a9\
+\:80bf\:7624\:7ec6\:80de\:7ef4\:6301 ROS \
+\:7a33\:6001(\:78f7\:9178\:620a\:7cd6\:9014\:5f84\:3001\:8c37\:6c28\:9170\
+\:80fa\:5408\:6210\:901a\:8def)\>\"", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]"},
+      {"SpanFromAbove", 
+       "\"\<\:4ee3\:8c22\:5f02\:5e38\:4fc3\:8fdb\:57fa\:56e0\:7684\:4e0d\:7a33\
+\:5b9a\:6027\>\"", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]"},
+      {"\"\<Hallmarks of \:80bf\:7624\:4ee3\:8c22\>\"", "SpanFromLeft", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", 
+       "\"\<\:5bf9\:8461\:8404\:7cd6\:3001\:6c28\:57fa\:9178\:6444\:5165\:5f02\
+\:5e38\:7684\:8c03\:63a7\>\"", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", 
+       "\"\<\:8425\:517b\:532e\:4e4f\:53d1\:5c55\:7684\:65b0\:6444\:53d6\:8425\
+\:517b\:7684\:65b9\:5f0f\>\"", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", "\"\<\:4ee3\:8c22\:901a\:8def\:91cd\:7f16\:7a0b\>\"",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]"},
+      {"\[Placeholder]", "\"\<\:5bf9N\:5143\:7d20\:7684\:9700\:6c42\>\"", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"\[Placeholder]", 
+       "\"\<\:5bf9\:5f02\:5e38\:4ee3\:8c22\:4e2d\:95f4\:4ea7\:7269\:7684\:7d2f\
+\:79ef\>\"", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]"},
+      {"\[Placeholder]", 
+       "\"\<\:5fae\:73af\:5883\:4e2d\:4ee3\:8c22\:5c0f\:5206\:5b50\:4e24\:8005\
+\:7684\:76f8\:4e92\:4f5c\:7528\>\"", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]"}
+     }], ")"}], ",", 
+   RowBox[{"Frame", "\[Rule]", "All"}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8013833040740747`*^9, 3.8013835624268503`*^9}, {
+  3.801383685509417*^9, 3.8013842412415533`*^9}, {3.801384287961973*^9, 
+  3.801384295873508*^9}, {3.8013843388116293`*^9, 3.801384479729886*^9}, {
+  3.8013850295776997`*^9, 3.801385106671379*^9}, {3.801385152308256*^9, 
+  3.801385153709449*^9}, {3.8013852115612173`*^9, 3.801385212256991*^9}, {
+  3.801385284955722*^9, 3.801385301098846*^9}, {3.801385335099269*^9, 
+  3.8013853471810703`*^9}, {3.801385511019946*^9, 3.80138568673141*^9}, {
+  3.801386150553647*^9, 3.801386158436529*^9}, {3.801386219140451*^9, 
+  3.801386291705055*^9}, {3.801386344526266*^9, 
+  3.8013865410523767`*^9}},ExpressionUUID->"01d861f9-706e-4844-9fcb-\
+9c0f66633f7e"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {Cell[
+     "Cancer\:5b9a\:4e49",ExpressionUUID->
+      "d98998ff-3bdc-4422-b6b5-2d572c3e4eb7"], Cell[
+     "\:6301\:7eed\:5206\:88c2\:590d\:5236",ExpressionUUID->
+      "e9dc5157-6810-4c93-8c82-49c5cb277092"], Cell[
+     "\:4e00\:90e8\:5206\:7ec6\:80de\:53ef\:4ee5\:8fdb\:884c\:4e0d\:505c\:7684\
+\:5206\:88c2\:ff0c\:7a81\:7834\:7ec4\:7ec7\:754c\:9650\:ff0c\:4fb5\:72af\:90bb\
+\:8fd1\:7684\:7ec4\:7ec7",ExpressionUUID->
+      "17609f77-7983-4fc7-a257-c70d7986a603"], Cell[
+     "\:91cd\:8981\:810f\:5668\:8870\:7aed\:548c\:75c5\:4eba\:6b7b\:4ea1",
+      ExpressionUUID->"37a66c26-8667-45ba-88eb-5ff647b5e295"], 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "\:7ec4\:7ec7\:6d78\:6da6\:548c\:8f6c\:79fb",ExpressionUUID->
+      "10c14d8e-ecf5-4944-9096-9686167b35a8"], Cell[
+     "\:901a\:8fc7\:6dcb\:5df4\:7cfb\:7edf\:6216\:8840\:6db2\:5faa\:73af\:7cfb\
+\:7edf\:4fb5\:72af\:5230\:8fdc\:7aef\:7684\:7684\:7ec4\:7ec7\:5668\:5b98",
+      ExpressionUUID->"870ac2a3-f463-41f0-938e-0d3994c6bbaa"], 
+     "\[SpanFromAbove]", "\[Placeholder]", "\[Placeholder]"},
+    {Cell[
+     "Hallmarks of Cancer",ExpressionUUID->
+      "db9ed2d2-9451-468d-8d6e-b28701bb76ac"], "\[SpanFromLeft]", 
+     "\[SpanFromLeft]", "\[SpanFromLeft]", "\[SpanFromLeft]", 
+     "\[Placeholder]"},
+    {"\[Placeholder]", Cell[
+     "\:6301\:7eed\:5373\:83b7\:5f97\:589e\:6b96\:4fe1\:53f7",ExpressionUUID->
+      "4a770e5a-912b-4316-94f8-1c7585ea91c1"], Cell[
+     "\:81ea\:5206\:6ccc\:589e\:6b96\:523a\:6fc0",ExpressionUUID->
+      "774e9916-e848-4208-baa7-b313ed12b1e9"], "\[SpanFromLeft]", 
+     "\[SpanFromLeft]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", Cell[
+     "\:65c1\:5206\:6ccc\:589e\:6b96\:523a\:6fc0",ExpressionUUID->
+      "3a47ffdc-517f-4227-ac79-e69ec1839adc"], "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", Cell[
+     "\:63d0\:9ad8\:53d7\:4f53\:6c34\:5e73",ExpressionUUID->
+      "68214616-ce48-4a0d-b874-1403209e223c"], "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", Cell[
+     "\:53d7\:4f53\:7ed3\:6784\:53d8\:5316",ExpressionUUID->
+      "4abde04e-92c6-483f-b3a5-c2c53b68a817"], "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", Cell[
+     "\:7d2f\:79ef\:5f88\:591a\:7a81\:53d8",ExpressionUUID->
+      "0e77bc62-416a-4693-adc0-f9e514236c28"], "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", Cell[
+     "\:53bb\:9664\:524a\:5f31\:589e\:6b96\:4fe1\:53f7\:8d1f\:53cd\:9988",
+      ExpressionUUID->"3617271b-3bfa-4251-bd04-17dc54820048"], Cell[
+     "PTEN",ExpressionUUID->"79c24f68-412b-4bdb-b486-1415dae0dcb9"], 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "\:751f\:957f\:6291\:5236\:9003\:9038\:ff08\:89c4\:907f\:751f\:957f\:6291\
+\:5236\:ff09",ExpressionUUID->"1198b9b4-3695-4870-927e-e90bd9ee69b1"], 
+     "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "\:65e0\:9650\:590d\:5236\:80fd\:529b",ExpressionUUID->
+      "20dc7fe0-9160-4861-918f-9d91d3a69f29"], Cell[
+     "p53\:5931\:6d3b\:6027\:7a81\:53d8",ExpressionUUID->
+      "2bed43b3-3ded-4a97-a3ca-e7399fd55eaa"], "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", Cell[
+     "\:8fc7\:8868\:8fbe\:7aef\:7c92\:9176",ExpressionUUID->
+      "08ffff47-2cb6-4e7e-9cd4-3be10e8bbb31"], "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "\:8bf1\:5bfc\:8840\:7ba1\:65b0\:751f",ExpressionUUID->
+      "beb9c08b-f8d6-46a8-9650-aa43d56a2dfb"], Cell[
+     "\:591a\:79cd\:7ec6\:80de\:53c2\:4e0e",ExpressionUUID->
+      "955024a3-cd20-4f28-a88a-e1583d0310ac"], "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "\:4fb5\:88ad\:548c\:8f6c\:79fb",ExpressionUUID->
+      "098c5e59-ac34-40f3-9c31-0a9442f6fd35"], "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "\:7ec6\:80de\:6b7b\:4ea1\:51cb\:4ea1\:7684\:62b5\:6297\:ff08\:62b5\:6297\
+\:7ec6\:80de\:6b7b\:4ea1\:ff09",ExpressionUUID->
+      "ff4acbb2-8255-45f8-9a81-2cc4f6f6bcaf"], "\[Placeholder]", Cell[
+     "\:4e0b\:8c03\:51cb\:4ea1\:86cb\:767d\:5982p53\:7b49",ExpressionUUID->
+      "ccbd3173-c3c6-4552-9dd0-24592094830e"], "\[Placeholder]", 
+     "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", Cell["\<\
+\:4e0a\:8c03\:6297\:51cb\:4ea1\:86cb\:767d\:7684\:8868\:8fbe\:5982BCL-2\\IAPs\
+\
+\>",ExpressionUUID->"ae205ea2-afe8-441b-934d-6ba08f84694e"], "\[Placeholder]",
+      "\[Placeholder]"},
+    {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", Cell[
+     "\:6fc0\:6d3b\:81ea\:566c\:548c\:574f\:6b7b\:5e2e\:52a9\:5b58\:6d3b",
+      ExpressionUUID->"813e793e-fc0e-4a09-b06d-de5bbb78e0e1"], 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "\:57fa\:56e0\:7ec4\:4e0d\:7a33\:5b9a\:6027\:548c\:7a81\:53d8",
+      ExpressionUUID->"32aa9e91-0956-41ba-9caf-ad642d17e80c"], 
+     "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "\:4fc3\:8fdb\:80bf\:7624\:708e\:6027\:5fae\:73af\:5883",ExpressionUUID->
+      "59124530-df85-4209-82b1-4c7ad4ae4e4d"], "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "\:907f\:514d\:514d\:75ab\:6467\:6bc1\:ff08\:514d\:75ab\:9003\:9038\:ff09\
+",ExpressionUUID->"3174bda3-e686-4936-ba3d-74801c4d3513"], "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "\:4ee3\:8c22\:5f02\:5e38\:3001\:91cd\:7f16\:7a0b",ExpressionUUID->
+      "23ddc749-dfa0-4bb5-b5bb-36edfb923bd8"], "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"}
+   },
+   AutoDelete->False,
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "TextGrid"]], "Output",
+ CellChangeTimes->{3.80138404810704*^9, 3.801384482549753*^9, 
+  3.801385212657815*^9, 3.8013853027734957`*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"bcc6610c-1e85-4f88-93ea-93059a6810ca"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TextGrid", "[", 
+  RowBox[{
+   RowBox[{"(", GridBox[{
+      {"\"\<\:514d\:75ab\:5b66\>\"", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]"},
+      {"\"\<\:638c\:63e1\:56db\:7c7b\:8d85\:654f\:53cd\:5e94\:7684\:53d1\:751f\
+\:673a\:5236\>\"", "\"\<\:8d85\:654f\:53cd\:5e94\:5b9a\:4e49\>\"", 
+       "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"SpanFromAbove", "SpanFromLeft", 
+       "\"\<\:4e3b\:8981\:53c2\:4e0e\:6210\:5206\>\"", 
+       "\"\<\:53d1\:751f\:8fc7\:7a0b\>\"", "\"\<\:5e38\:89c1\:75be\:75c5\>\""},
+      {"SpanFromAbove", "\"\<I\:578b\:8fc7\:654f\:53cd\:5e94\>\"", 
+       "\"\<\:53d8\:6001\:539f\:ff0cIgE\:6297\:4f53\:ff0c\:6548\:5e94\:7ec6\
+\:80de\:ff0c\:751f\:7269\:6d3b\:6027\:4ecb\:8d28\>\"", 
+       "\"\<\:81f4\:654f\:9636\:6bb5\:ff08\:53d8\:6001\:539f\:8fdb\:5165\:673a\
+\:4f53\:ff0c\:8bf1\:53d1B\:7ec6\:80de\:6d3b\:5316\:589e\:6b96\:5206\:5316\
+\:4ea7\:751fIgE\:ff09\:ff0cIgE\:7684Fc\:6bb5\:4e0e\:6548\:5e94\:7ec6\:80de\
+\:7684\n\:7684Fc\[Epsilon]RI\:7ed3\:5408\:ff0c\:4f7f\:673a\:4f53\:5904\:4e8e\
+\:81f4\:654f\:72b6\:6001\:ff09\n\:53d1\:654f\:8fc7\:7a0b\:ff08\:76f8\:540c\
+\:53d8\:6001\:539f\:518d\:6b21\:8fdb\:5165\:ff0c\:4e0e\:81f4\:654f\:9776\:7ec6\
+\:80de\:8868\:9762IgE\:7ed3\:5408\:ff0c\:4f7f\:4e4b\:8131\:9897\:7c92\:ff0c\n\
+\:91ca\:653e\:751f\:7269\:6d3b\:6027\:4ecb\:8d28\:ff0c\:4f5c\:7528\:4e8e\:9776\
+\:5668\:5b98\:ff0c\:5f15\:8d77\:5c40\:90e8\:6216\:5168\:8eab\:53cd\:5e94\:ff09\
+\>\"", "\"\<\:8fc7\:654f\:6027\:4f11\:514b\:ff0c\n\:547c\:5438\:9053/\:6d88\
+\:5316\:9053/\:76ae\:80a4\:8fc7\:654f\:53cd\:5e94\>\""},
+      {"SpanFromAbove", "\"\<II\:578b\:7ec6\:80de\:6eb6\:89e3\:578b\>\"", 
+       "\"\<\:6297\:539f\:ff08\:7ec6\:80de\:56fa\:6709\:6297\:539f\:ff0c\:5438\
+\:9644\:7ec6\:80de\:4e0a\:5916\:6e90\:6297\:539f\:ff0c\:5bfc\:81f4\:6539\:53d8\
+\:81ea\:8eab\:6297\:539f\:ff09\n\:6297\:4f53\:ff08IgG\:ff0cIgM\:ff09IgA\n\
+\:7ec6\:80de\:ff08\:541e\:566c\:7ec6\:80de\:ff0cNK\:7ec6\:80de\:ff09\:ff0c\
+\:8865\:4f53\>\"", 
+       "\"\<IgG\:3001IgM\:4e0e\:9776\:7ec6\:80de\:8868\:9762\:6297\:539f\:7ed3\
+\:5408\:ff0c\:501f\:52a9\:8865\:4f53\:7ec6\:80de\:7b49\:5217\:89e3\:7ec6\:80de\
+\>\"", "\"\<\:8f93\:8840\:53cd\:5e94\:ff0c\:65b0\:751f\:513f\:6eb6\:8840\:75c7\
+\:ff0c\:81ea\:8eab\:514d\:75ab\:6027\:6eb6\:8840\:6027\:8d2b\:8840\n\:836f\
+\:7269\:8fc7\:654f\:6027\:8840\:7ec6\:80de\:51cf\:5c11\:ff0c\:6297\:80be\:5c0f\
+\:7403\:57fa\:5e95\:819c\:80be\:708e\>\""},
+      {"SpanFromAbove", 
+       "\"\<III\:578b\:514d\:75ab\:7269\:590d\:5408\:578b\>\"", 
+       "\"\<\:6297\:539f\:ff08\:53ef\:6eb6\:6027\:6297\:539f\:ff09\:ff0c\:6297\
+\:4f53\:ff08IgG\:ff0cIgM\:ff0cIgA\:ff09\:ff0c\n\:6548\:5e94\:7ec6\:80de\:ff08\
+\:4e2d\:6027\:7c92\:7ec6\:80de\:ff0c\:55dc\:78b1\:6027\:7c92\:7ec6\:80de\:ff0c\
+\:8840\:5c0f\:677f\:ff09\>\"", 
+       "\"\<\:53ef\:6eb6\:6027IC\:5f62\:6210\:ff08\:8840\:6db2\:5faa\:73af\
+\:4e2d\:5f62\:6210\:7684\:6297\:539f\:6297\:4f53\:590d\:5408\:7269\:ff09\nIC\
+\:7684\:6c89\:6dc0\:ff08\:4e00\:5b9a\:6761\:4ef6\:4e0b\:6c89\:79ef\:4e8e\:8840\
+\:7ba1\:58c1\:57fa\:5e95\:819c\:6216\:7ec4\:7ec7\:95f4\:9699\:ff09\n\:7ec4\
+\:7ec7\:635f\:4f24\:ff08\:6fc0\:6d3b\:8865\:4f53\:ff0c\:6548\:5e94\:7ec6\:80de\
+\:53c2\:4e0e\:4e0b\:ff0c\:5145\:8840\:6c34\:80bf\:ff0c\:5c40\:90e8\:574f\:6b7b\
+\:ff0c\:4e2d\:6027\:7c92\:7ec6\:80de\:6d78\:6da6\:4e3a\:4e3b\:8981\:7279\:5f81\
+\:7684\:708e\:75c7\:53cd\:5e94\:ff0c\:7ec4\:7ec7\:635f\:4f24\:ff09\>\"", 
+       "\"\<Arithus\:53cd\:5e94\:ff08\:52a8\:7269\:ff09\:ff0c\:8840\:6e05\
+\:75c5\:ff0c\:7cfb\:7edf\:6027\:7ea2\:72fc\:75ae\:ff0c\:7c7b\:98ce\:6e7f\>\""},
+      {"SpanFromAbove", "\"\<IV\:578b\:8d85\:654f\:53cd\:5e94\>\"", 
+       "\"\<\:6297\:539f\:ff0c\:6548\:5e94\:7ec6\:80de\:ff08CD4+\:ff0cCD8+\
+\:ff0cT-cell\:ff08\:81f4\:654fT\:7ec6\:80de\:ff09\:ff1b\:5355\:6838\:5de8\
+\:566c\:7ec6\:80de\:ff09\>\"", 
+       "\"\<\:81f4\:654f\:9636\:6bb5\:ff08\:521d\:6b21\:63a5\:89e6\:6297\:539f\
+\:ff0cAPC\:63d0\:5448\:ff0cT\:7ec6\:80de\:6d3b\:5316\:589e\:6b96\:5206\:5316\
+\:81f4\:654fT-cell\:ff09\n\:6548\:5e94\:9636\:6bb5\:ff08\:518d\:6b21\:63a5\
+\:89e6\:6297\:539fm\:ff0cTh1\:91ca\:653e\:7ec6\:80de\:56e0\:5b50\:ff0c\:4ea7\
+\:751f\:4e00\:7cfb\:5217\:708e\:75c7\:53cd\:5e94\:ff09\nTc\:901a\:8fc7\:7a7f\
+\:5b54\:7d20\:ff0c\:9897\:7c92\:9176\:7b49\:5bfc\:81f4\:9776\:7ec6\:80de\:88c2\
+\:89e3\:51cb\:4ea1\:3002\n\:7ed3\:679c\:5355\:6838\:7ec6\:80de\:53ca\:6dcb\
+\:5df4\:7ec6\:80de\:6d78\:6da6\:8d3a\:7ec4\:7ec7\:7ec6\:80de\:635f\:4f24\>\"",\
+ "\"\<\:63a5\:89e6\:6027\:76ae\:708e\:ff0c\:79fb\:690d\:6392\:5f02\>\""},
+      {"\"\<\:4e86\:89e3\:81ea\:8eab\:514d\:75ab\:6027\:75be\:75c5\:53d1\:751f\
+\:673a\:5236\>\"", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+       "\[Placeholder]"},
+      {"\[Placeholder]", 
+       "\"\<\:81ea\:8eab\:6297\:539f\:53d1\:751f\:6539\:53d8\:ff1b\:514d\:75ab\
+\:9694\:79bb\:90e8\:4f4d\:7684\:6297\:539f\:91ca\:653e\:ff1b\n\:5206\:5b50\
+\:6a21\:62df\:6216\:8d85\:6297\:539f\:6fc0\:6d3b\:81ea\:8eab\:514d\:75ab\:6027\
+\:6dcb\:5df4\:7ec6\:80de\:514b\:9686\:ff1b\n\:8868\:4f4d\:6269\:5c55\:ff1b\
+\:514d\:75ab\:7cfb\:7edf\:529f\:80fd\:5f02\:5e38\>\"", "\[Placeholder]", 
+       "\[Placeholder]", "\[Placeholder]"},
+      {"\"\<\:80bf\:7624\:7279\:5f02\:6027\:6297\:539f\:ff0c\:80bf\:7624\:76f8\
+\:5173\:6297\:539f\:7684\:533a\:522b\>\"", 
+       "\"\<\:7ec6\:80de\:5728\:764c\:53d8\:8fc7\:7a0b\:4e2d\:4ea7\:751f\:7684\
+\:5177\:6709\:514d\:75ab\:539f\:6027\:7684\:5927\:5206\:5b50\:7269\:8d28\>\"",
+        "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+      {"SpanFromAbove", 
+       "\"\<\:80bf\:7624\:7279\:5f02\:6027\:6297\:539fTSA\>\"", 
+       "\"\<\:80bf\:7624\:7279\:6709\:ff08\:4e0d\:5b58\:5728\:4e8e\:6b63\:5e38\
+\:7ec6\:80de\:ff09\>\"", "\[Placeholder]", "\[Placeholder]"},
+      {"SpanFromAbove", "\"\<\:80bf\:7624\:76f8\:5173\:6297\:539fTAA\>\"", 
+       "\"\<\:6b63\:5e38\:7ec6\:80de\:5fae\:91cf\:8868\:8fbe\:ff0c\:80bf\:7624\
+\:4e2d\:8868\:8fbe\:589e\:52a0\>\"", "\[Placeholder]", "\[Placeholder]"}
+     }], ")"}], ",", 
+   RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}]], "Input",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGCQBGIQPWOzyPu1QW8cp4gxfgDRR17NaVoHpBd6OzWD6KBl
+Xu0guklzbh+I9nHkLV8PpE1r3ftBdFtE3XQQvezklY0g+pFfyiUQ3adadh1E
+y8Wk3wXRAgdqn4FosbSkzyB62vyOL2D90g2sG4C0keYiThCdXFfKB6K3hBfx
+g2i+jmXCILor9oAciH4WY6YMolfFsxqB6DnGouYgWkdqAZi+9+OUK4ieUHbA
+A0RnzvnqB6IttOpCQHTf9P/FINrn6qU6EK0qvLkJRB9rPdMGou3rJ/aA6LwK
+090gepl/yA0QfdCd7yOILjqXpbER5C82FmMQPT2s1QJEf2064QmiWTz++oFo
+oeo16SD6tn9sLojOMswsANGHEjXrQbTppapWEN1xVu4yiHbhjnsKogHHDsqL
+
+  "],
+ CellLabel->"In[9]:=",ExpressionUUID->"6af337b1-96a7-4593-b2ad-f2b83a70dc2a"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {Cell[
+     "\:514d\:75ab\:5b66",ExpressionUUID->
+      "60a3b070-0102-4582-bbd8-079115f820f4"], "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+    {Cell[
+     "\:638c\:63e1\:56db\:7c7b\:8d85\:654f\:53cd\:5e94\:7684\:53d1\:751f\:673a\
+\:5236",ExpressionUUID->"4aac1c1e-2f5f-49e2-853b-d8b1ccc67ddc"], Cell[
+     "\:8d85\:654f\:53cd\:5e94\:5b9a\:4e49",ExpressionUUID->
+      "ae618c87-8670-4929-b3b0-82a818696195"], "\[Placeholder]", 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[SpanFromAbove]", "\[SpanFromLeft]", Cell[
+     "\:4e3b\:8981\:53c2\:4e0e\:6210\:5206",ExpressionUUID->
+      "01435216-2d53-4977-a308-118caec7cb9c"], Cell[
+     "\:53d1\:751f\:8fc7\:7a0b",ExpressionUUID->
+      "45d26dbb-5de6-4eba-bcee-2bb1eb2fa6e6"], Cell[
+     "\:5e38\:89c1\:75be\:75c5",ExpressionUUID->
+      "46bb7297-1340-4b9b-b5b7-9647c7670aac"]},
+    {"\[SpanFromAbove]", Cell[
+     "I\:578b\:8fc7\:654f\:53cd\:5e94",ExpressionUUID->
+      "3727582f-9f89-41ea-b10f-c8570ee4db47"], Cell[
+     "\:53d8\:6001\:539f\:ff0cIgE\:6297\:4f53\:ff0c\:6548\:5e94\:7ec6\:80de\
+\:ff0c\:751f\:7269\:6d3b\:6027\:4ecb\:8d28",ExpressionUUID->
+      "9d8bd5c7-53fd-43c3-82bb-8cf700bdea56"], Cell["\<\
+\:81f4\:654f\:9636\:6bb5\:ff08\:53d8\:6001\:539f\:8fdb\:5165\:673a\:4f53\:ff0c\
+\:8bf1\:53d1B\:7ec6\:80de\:6d3b\:5316\:589e\:6b96\:5206\:5316\:4ea7\:751fIgE\
+\:ff09\:ff0cIgE\:7684Fc\:6bb5\:4e0e\:6548\:5e94\:7ec6\:80de\:7684
+\:7684Fc\[Epsilon]RI\:7ed3\:5408\:ff0c\:4f7f\:673a\:4f53\:5904\:4e8e\:81f4\
+\:654f\:72b6\:6001\:ff09
+\:53d1\:654f\:8fc7\:7a0b\:ff08\:76f8\:540c\:53d8\:6001\:539f\:518d\:6b21\:8fdb\
+\:5165\:ff0c\:4e0e\:81f4\:654f\:9776\:7ec6\:80de\:8868\:9762IgE\:7ed3\:5408\
+\:ff0c\:4f7f\:4e4b\:8131\:9897\:7c92\:ff0c
+\:91ca\:653e\:751f\:7269\:6d3b\:6027\:4ecb\:8d28\:ff0c\:4f5c\:7528\:4e8e\:9776\
+\:5668\:5b98\:ff0c\:5f15\:8d77\:5c40\:90e8\:6216\:5168\:8eab\:53cd\:5e94\:ff09\
+\>",ExpressionUUID->"edb40698-7131-4a0f-8ed7-f4339dd282a6"], Cell["\<\
+\:8fc7\:654f\:6027\:4f11\:514b\:ff0c
+\:547c\:5438\:9053/\:6d88\:5316\:9053/\:76ae\:80a4\:8fc7\:654f\:53cd\:5e94\
+\>",ExpressionUUID->"d69c0218-6784-4a0c-b869-b1bb218ee50e"]},
+    {"\[SpanFromAbove]", Cell[
+     "II\:578b\:7ec6\:80de\:6eb6\:89e3\:578b",ExpressionUUID->
+      "4fdb88d0-2b56-4cbe-aa47-bf04a389d300"], Cell["\<\
+\:6297\:539f\:ff08\:7ec6\:80de\:56fa\:6709\:6297\:539f\:ff0c\:5438\:9644\:7ec6\
+\:80de\:4e0a\:5916\:6e90\:6297\:539f\:ff0c\:5bfc\:81f4\:6539\:53d8\:81ea\:8eab\
+\:6297\:539f\:ff09
+\:6297\:4f53\:ff08IgG\:ff0cIgM\:ff09IgA
+\:7ec6\:80de\:ff08\:541e\:566c\:7ec6\:80de\:ff0cNK\:7ec6\:80de\:ff09\:ff0c\
+\:8865\:4f53\
+\>",ExpressionUUID->"b5482886-bfc2-4790-be4c-ebffc9bc2078"], Cell[
+     "IgG\:3001IgM\:4e0e\:9776\:7ec6\:80de\:8868\:9762\:6297\:539f\:7ed3\:5408\
+\:ff0c\:501f\:52a9\:8865\:4f53\:7ec6\:80de\:7b49\:5217\:89e3\:7ec6\:80de",
+      ExpressionUUID->"ea975e95-b1f0-4408-915d-c1a4eb9393f6"], Cell["\<\
+\:8f93\:8840\:53cd\:5e94\:ff0c\:65b0\:751f\:513f\:6eb6\:8840\:75c7\:ff0c\:81ea\
+\:8eab\:514d\:75ab\:6027\:6eb6\:8840\:6027\:8d2b\:8840
+\:836f\:7269\:8fc7\:654f\:6027\:8840\:7ec6\:80de\:51cf\:5c11\:ff0c\:6297\:80be\
+\:5c0f\:7403\:57fa\:5e95\:819c\:80be\:708e\
+\>",ExpressionUUID->"5f0766c8-9404-4c88-b50c-d9f6cb55b30f"]},
+    {"\[SpanFromAbove]", Cell[
+     "III\:578b\:514d\:75ab\:7269\:590d\:5408\:578b",ExpressionUUID->
+      "136b2885-d36f-46dd-9126-00086f443a11"], Cell["\<\
+\:6297\:539f\:ff08\:53ef\:6eb6\:6027\:6297\:539f\:ff09\:ff0c\:6297\:4f53\:ff08\
+IgG\:ff0cIgM\:ff0cIgA\:ff09\:ff0c
+\:6548\:5e94\:7ec6\:80de\:ff08\:4e2d\:6027\:7c92\:7ec6\:80de\:ff0c\:55dc\:78b1\
+\:6027\:7c92\:7ec6\:80de\:ff0c\:8840\:5c0f\:677f\:ff09\
+\>",ExpressionUUID->"d49c0782-9d6c-401f-9765-14626ef41431"], Cell["\<\
+\:53ef\:6eb6\:6027IC\:5f62\:6210\:ff08\:8840\:6db2\:5faa\:73af\:4e2d\:5f62\
+\:6210\:7684\:6297\:539f\:6297\:4f53\:590d\:5408\:7269\:ff09
+IC\:7684\:6c89\:6dc0\:ff08\:4e00\:5b9a\:6761\:4ef6\:4e0b\:6c89\:79ef\:4e8e\
+\:8840\:7ba1\:58c1\:57fa\:5e95\:819c\:6216\:7ec4\:7ec7\:95f4\:9699\:ff09
+\:7ec4\:7ec7\:635f\:4f24\:ff08\:6fc0\:6d3b\:8865\:4f53\:ff0c\:6548\:5e94\:7ec6\
+\:80de\:53c2\:4e0e\:4e0b\:ff0c\:5145\:8840\:6c34\:80bf\:ff0c\:5c40\:90e8\:574f\
+\:6b7b\:ff0c\:4e2d\:6027\:7c92\:7ec6\:80de\:6d78\:6da6\:4e3a\:4e3b\:8981\:7279\
+\:5f81\:7684\:708e\:75c7\:53cd\:5e94\:ff0c\:7ec4\:7ec7\:635f\:4f24\:ff09\
+\>",ExpressionUUID->"fbf79cbf-86a4-4935-925f-4567e8a240fb"], Cell[
+     "Arithus\:53cd\:5e94\:ff08\:52a8\:7269\:ff09\:ff0c\:8840\:6e05\:75c5\
+\:ff0c\:7cfb\:7edf\:6027\:7ea2\:72fc\:75ae\:ff0c\:7c7b\:98ce\:6e7f",
+      ExpressionUUID->"d17587ee-c844-44c4-aa79-6c26762127bd"]},
+    {"\[SpanFromAbove]", Cell[
+     "IV\:578b\:8d85\:654f\:53cd\:5e94",ExpressionUUID->
+      "ed0f62df-af48-4df9-ac8a-d9449cb58deb"], Cell[
+     "\:6297\:539f\:ff0c\:6548\:5e94\:7ec6\:80de\:ff08CD4+\:ff0cCD8+\:ff0cT-\
+cell\:ff08\:81f4\:654fT\:7ec6\:80de\:ff09\:ff1b\:5355\:6838\:5de8\:566c\:7ec6\
+\:80de\:ff09",ExpressionUUID->"6b3de7ad-76c6-4820-8a95-5d1444679262"], 
+     Cell["\<\
+\:81f4\:654f\:9636\:6bb5\:ff08\:521d\:6b21\:63a5\:89e6\:6297\:539f\:ff0cAPC\
+\:63d0\:5448\:ff0cT\:7ec6\:80de\:6d3b\:5316\:589e\:6b96\:5206\:5316\:81f4\
+\:654fT-cell\:ff09
+\:6548\:5e94\:9636\:6bb5\:ff08\:518d\:6b21\:63a5\:89e6\:6297\:539fm\:ff0cTh1\
+\:91ca\:653e\:7ec6\:80de\:56e0\:5b50\:ff0c\:4ea7\:751f\:4e00\:7cfb\:5217\:708e\
+\:75c7\:53cd\:5e94\:ff09
+Tc\:901a\:8fc7\:7a7f\:5b54\:7d20\:ff0c\:9897\:7c92\:9176\:7b49\:5bfc\:81f4\
+\:9776\:7ec6\:80de\:88c2\:89e3\:51cb\:4ea1\:3002
+\:7ed3\:679c\:5355\:6838\:7ec6\:80de\:53ca\:6dcb\:5df4\:7ec6\:80de\:6d78\:6da6\
+\:8d3a\:7ec4\:7ec7\:7ec6\:80de\:635f\:4f24\
+\>",ExpressionUUID->"67690bc2-9e3b-4287-a463-2203a8afc757"], Cell[
+     "\:63a5\:89e6\:6027\:76ae\:708e\:ff0c\:79fb\:690d\:6392\:5f02",
+      ExpressionUUID->"3576ade6-ec7d-4701-a5d4-0ee8ff1373b1"]},
+    {Cell[
+     "\:4e86\:89e3\:81ea\:8eab\:514d\:75ab\:6027\:75be\:75c5\:53d1\:751f\:673a\
+\:5236",ExpressionUUID->"9905908f-ab9b-40d9-a7cc-bf6e6e18ca9d"], 
+     "\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+    {"\[Placeholder]", Cell["\<\
+\:81ea\:8eab\:6297\:539f\:53d1\:751f\:6539\:53d8\:ff1b\:514d\:75ab\:9694\:79bb\
+\:90e8\:4f4d\:7684\:6297\:539f\:91ca\:653e\:ff1b
+\:5206\:5b50\:6a21\:62df\:6216\:8d85\:6297\:539f\:6fc0\:6d3b\:81ea\:8eab\:514d\
+\:75ab\:6027\:6dcb\:5df4\:7ec6\:80de\:514b\:9686\:ff1b
+\:8868\:4f4d\:6269\:5c55\:ff1b\:514d\:75ab\:7cfb\:7edf\:529f\:80fd\:5f02\:5e38\
+\>",ExpressionUUID->"c0f08df9-f7e2-49eb-a6ab-26c48e3ea13b"], "\[Placeholder]",
+      "\[Placeholder]", "\[Placeholder]"},
+    {Cell[
+     "\:80bf\:7624\:7279\:5f02\:6027\:6297\:539f\:ff0c\:80bf\:7624\:76f8\:5173\
+\:6297\:539f\:7684\:533a\:522b",ExpressionUUID->
+      "04ecb360-0a32-40a6-8499-209bc5309826"], Cell[
+     "\:7ec6\:80de\:5728\:764c\:53d8\:8fc7\:7a0b\:4e2d\:4ea7\:751f\:7684\:5177\
+\:6709\:514d\:75ab\:539f\:6027\:7684\:5927\:5206\:5b50\:7269\:8d28",
+      ExpressionUUID->"6155c71c-3302-4dbf-8592-b32da4407766"], 
+     "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "\:80bf\:7624\:7279\:5f02\:6027\:6297\:539fTSA",ExpressionUUID->
+      "50642455-8f05-4b4c-b776-4fe68cf1eba4"], Cell[
+     "\:80bf\:7624\:7279\:6709\:ff08\:4e0d\:5b58\:5728\:4e8e\:6b63\:5e38\:7ec6\
+\:80de\:ff09",ExpressionUUID->"cc0365c8-337b-4a82-b237-138e6bc89399"], 
+     "\[Placeholder]", "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "\:80bf\:7624\:76f8\:5173\:6297\:539fTAA",ExpressionUUID->
+      "93fd2d0f-e882-425d-8d95-3154e46f0d59"], Cell[
+     "\:6b63\:5e38\:7ec6\:80de\:5fae\:91cf\:8868\:8fbe\:ff0c\:80bf\:7624\:4e2d\
+\:8868\:8fbe\:589e\:52a0",ExpressionUUID->
+      "c2ffad49-8e4a-4668-b7e1-48bbaef00c5b"], "\[Placeholder]", 
+     "\[Placeholder]"}
+   },
+   AutoDelete->False,
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "TextGrid"]], "Output",
+ CellChangeTimes->{
+  3.801448360928801*^9, {3.801452311909616*^9, 3.801452331438344*^9}},
+ CellLabel->"Out[9]=",ExpressionUUID->"03714a19-140a-4ad9-a6e1-55c5228a43c5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TextGrid", "[", 
+  RowBox[{
+   RowBox[{"(", GridBox[{
+      {"\"\<EMT\:5b9a\:4e49\>\"", 
+       "\"\<\:4e0a\:76ae-\:95f4\:5145\:8d28\:8f6c\:53d8\:ff08EMT\:ff09\:662f\
+\:4e00\:4e2a\:8fc7\:7a0b\:ff0c\n\:901a\:8fc7\:8be5\:8fc7\:7a0b\:4e0a\:76ae\
+\:7ec6\:80de\:5931\:53bb\:7ec6\:80de\:6781\:6027\:548c\:7ec6\:80de\:95f4\:7c98\
+\:9644\:529b\:ff0c\:5e76\:83b7\:5f97\:8fc1\:79fb\:548c\:4fb5\:88ad\:7279\:6027\
+\:ff0c\:6210\:4e3a\:95f4\:5145\:8d28\:5e72\:7ec6\:80de\:3002\n\:8fd9\:4e9b\
+\:662f\:80fd\:5206\:5316\:4e3a\:591a\:79cd\:7ec6\:80de\:7c7b\:578b\:7684\:591a\
+\:80fd\:57fa\:8d28\:7ec6\:80de\>\"", "\[Placeholder]"},
+      {"\"\<\:4e0a\:76ae\:7ec6\:80de\>\"", 
+       "\"\<\:4e0a\:76ae\:662f\:52a8\:7269\:7ec4\:7ec7\:7684\:56db\:79cd\:57fa\
+\:672c\:7c7b\:578b\:4e4b\:4e00\:ff0c\:904d\:5e03\:6574\:4e2a\:4eba\:4f53\:7684\
+\:8840\:7ba1\:548c\:5668\:5b98\:7684\:8154\:548c\:8868\:9762\>\"", 
+       "\[Placeholder]"},
+      {"\"\<\:7279\:70b9\>\"", "\"\<\:5355\:5c42\:6216\:5206\:5c42\>\"", 
+       "\[Placeholder]"},
+      {"SpanFromAbove", "\"\<\:7a33\:5b9a\:7684\:7c98\:9644\>\"", 
+       "\[Placeholder]"},
+      {"\"\<\:95f4\:5145\:8d28\:7ec6\:80de\>\"", 
+       "\"\<\:95f4\:5145\:8d28\:662f\:4e00\:79cd\:7ec4\:7ec7\:ff0c\:5176\:7279\
+\:5f81\:662f\:5177\:6709\:677e\:6563\:76f8\:5173\:7684\:7ec6\:80de\:ff0c\:7f3a\
+\:4e4f\:6781\:6027\:ff0c\:88ab\:5927\:7684\:7ec6\:80de\:5916\:57fa\:8d28\:5305\
+\:56f4\:3002\>\"", "\[Placeholder]"},
+      {"\"\<\:7279\:5f81\>\"", 
+       "\"\<\:4e0d\:89c4\:5219\:6392\:5217\:ff0c\:65e0\:5206\:5c42\>\"", 
+       "\[Placeholder]"},
+      {"SpanFromAbove", 
+       "\"\<\:7f3a\:4e4f\:7ec6\:80de\:95f4\:6216ECM\:8fde\:63a5\:ff0c\:8fde\
+\:63a5\:5f31\>\"", "\[Placeholder]"},
+      {"SpanFromAbove", 
+       "\"\<\:6839\:5c16\:ff0d\:57fa\:5e95\:5916\:4fa7\:6781\:5316\:7684\:4e27\
+\:5931\:ff0c\:65e0\:6781\:6027\>\"", "\[Placeholder]"},
+      {"SpanFromAbove", 
+       "\"\<\:8fd0\:52a8\:548c\:4fb5\:88ad\:ff0c\:4fb5\:88ad\:6027\>\"", 
+       "\[Placeholder]"},
+      {"\"\<EMT\:6b65\:9aa4\>\"", "\"\<\:8bf1\:53d1\:56e0\:7d20\>\"", 
+       "\[Placeholder]"},
+      {"SpanFromAbove", 
+       "\"\<\:7ec6\:80de\:9aa8\:67b6\:91cd\:6784\:ff0c\:5411\:5fc3\:6027\:6536\
+\:7f29\>\"", "\[Placeholder]"},
+      {"SpanFromAbove", "\"\<\:7eb5\:5411\:5ef6\:4f38\>\"", 
+       "\[Placeholder]"},
+      {"SpanFromAbove", "\"\<\:8131\:79bb\:57fa\:5e95\:819c\>\"", 
+       "\[Placeholder]"},
+      {"SpanFromAbove", "\"\<\:4f38\:51fa\:7a81\:8d77\>\"", 
+       "\[Placeholder]"},
+      {"SpanFromAbove", "\"\<\:7834\:574f\:57fa\:5e95\:819c\>\"", 
+       "\[Placeholder]"},
+      {"SpanFromAbove", 
+       "\"\<\:8868\:8fbe\:95f4\:8d28\:7ec6\:80de\:7684\:7c98\:9644\:5206\:5b50\
+\:81f3\:8131\:843d\>\"", "\[Placeholder]"},
+      {"\"\<EMT\:6807\:5fd7\:7269marker\>\"", 
+       "\"\<\:4e0a\:76ae\:6807\:5fd7\:7269\>\"", "\"\<E-cadherin\>\""},
+      {"SpanFromAbove", "SpanFromAbove", "\"\<\[Alpha]-catenin\>\""},
+      {"SpanFromAbove", "SpanFromAbove", "\"\<\[Gamma]-catenin\>\""},
+      {"SpanFromAbove", "\"\<\:95f4\:5145\:8d28\:7269\>\"", 
+       "\"\<Vimentin\>\""},
+      {"SpanFromAbove", "SpanFromAbove", "\"\<Fibronectin\>\""},
+      {"SpanFromAbove", "SpanFromAbove", "\"\<N-cadherin\>\""},
+      {"\"\<EMT\:8bf1\:5bfc\:7269inducer\>\"", 
+       "\"\<\:8f6c\:5f55\:56e0\:5b50\>\"", "\"\<Snail,Twist,ZEB\>\""},
+      {"SpanFromAbove", "\"\<TGF\[Beta]-\:8bf1\:5bfc\:7684EMT\>\"", 
+       "\"\<smad/non-smad\>\""},
+      {"SpanFromAbove", 
+       "\"\<\:6d89\:53caEMT\:7684\:4fe1\:53f7\:901a\:8def\>\"", 
+       "\"\<PI3K-AKT,Wnt,ERK-MAPK\>\""},
+      {"SpanFromAbove", "\"\<\:589e\:957f\:56e0\:5b50\>\"", 
+       "\"\<Wnt/Wingless,Hedgehog(Hh),\nTGF-/BMP,FGF,Morphogen,HGF&HGFR,\n\
+IGF-1,EGF,PDGF\>\""},
+      {"SpanFromAbove", "\"\<microRNA\>\"", "\"\<miR-200\>\""},
+      {"\"\<EMT\:8fc7\:7a0b\:4e2d\:7684\:53d8\:5316\>\"", 
+       "\"\<\:5931\:53bb\:6781\:6027\>\"", "\[Placeholder]"},
+      {"SpanFromAbove", "\"\<\:7ec6\:80de\:9aa8\:67b6\:7684\:6539\:53d8\>\"", 
+       "\[Placeholder]"},
+      {"\"\<EMT\:4e0e\:751f\:7406\:8fc7\:7a0b\:7684\:5173\:7cfb\>\"", 
+       "\"\<\:53d1\:80b2\>\"", 
+       "\"\<\:810a\:7d22\:52a8\:7269\:7684\:795e\:7ecf\:80da\:5f62\:6210\:ff1a\
+\:4e09\:4e2a\:80da\:5c42\:7684\:5f62\:6210\:ff08\:8054\:7cfb\:4e0a\:6587\:8bf4\
+\:7684\:751f\:957f\:56e0\:5b50\:73af\:8def\:8bf4\:660e\:ff09\>\""},
+      {"SpanFromAbove", "\"\<\:7ea4\:7ef4\:5316\>\"", 
+       "\"\<\:80be\:7ea4\:7ef4\:5316Renal Fibrosis\:ff1b\:7ec4\:7ec7\:4e2d\
+\:7684EMT\>\""},
+      {"SpanFromAbove", "\"\<EMT\:548c\:80bf\:7624\:8fdb\:5c55\>\"", 
+       "\"\<EMT\:662f\:4e0a\:76ae\:884d\:751f\:80bf\:7624\:6076\:6027\:80bf\
+\:7624\:7684\:4e3b\:8981\:9a71\:52a8\:529b\>\""},
+      {"SpanFromAbove", "SpanFromAbove", 
+       "\"\<\:4ece\:90a3\:4ee5\:540e\:ff0cEMT\:5df2\:88ab\:8bc1\:660e\:53ef\
+\:89e6\:53d1\:764c\:7ec6\:80de\:4ece\:539f\:53d1\:6027\:764c\:4e2d\:89e3\:79bb\
+\:ff0c\:968f\:540e\:5176\:8fc1\:79fb\:5e76\:6269\:6563\:5230\:8fdc\:5904\:3002\
+\>\""},
+      {"\"\<\:5176\:4ed6\:5173\:7cfb\>\"", 
+       "\"\<EMT\:548c\:80bf\:7624\:8fdb\:5c55\>\"", "\[Placeholder]"},
+      {"SpanFromAbove", "\"\<EMT\:548c\:80bf\:7624\:5fae\:73af\:5883\>\"", 
+       "\[Placeholder]"},
+      {"SpanFromAbove", 
+       "\"\<EMT\:5bfc\:81f4\:65b0\:9648\:4ee3\:8c22\:548c\:6781\:5316\:901a\
+\:8def\>\"", "\[Placeholder]"},
+      {"SpanFromAbove", "\"\<EMT\:548c\:80bf\:7624\:5e72\:7ec6\:80de\>\"", 
+       "\[Placeholder]"},
+      {"SpanFromAbove", 
+       "\"\<EMT\:671f\:95f4\:53d1\:751f\:7684\:5176\:4ed6\:526a\:63a5\:66f4\
+\:6539\>\"", "\[Placeholder]"},
+      {"SpanFromAbove", "\"\<EMT\:548c\:836f\:7269\:62b5\:6297\>\"", 
+       "\[Placeholder]"},
+      {"SpanFromAbove", 
+       "\"\<EMT\:548c\:5931\:5de2\:51cb\:4ea1\:62b5\:6297\>\"", 
+       "\[Placeholder]"},
+      {"SpanFromAbove", "\"\<EMT\:548c\:514d\:75ab\:6291\:5236\>\"", 
+       "\[Placeholder]"}
+     }], ")"}], ",", 
+   RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8014525681555653`*^9, 3.8014525778527727`*^9}, {
+   3.801453567701454*^9, 3.801453572336441*^9}, {3.8014537829485607`*^9, 
+   3.80145387760797*^9}, {3.8014539190203867`*^9, 3.801453931463194*^9}, {
+   3.801453968933659*^9, 3.801454061502803*^9}, {3.801454583411902*^9, 
+   3.801454717250099*^9}, {3.8014548643717117`*^9, 3.801454903713358*^9}, {
+   3.801454970476139*^9, 3.801455004212998*^9}, {3.801455264406328*^9, 
+   3.8014552774152327`*^9}, {3.801455327586279*^9, 3.8014553547383413`*^9}, {
+   3.801455395643671*^9, 3.801455455204164*^9}, {3.8014555016494703`*^9, 
+   3.801455504208699*^9}, {3.80146788694139*^9, 3.8014678880278177`*^9}, {
+   3.801467955977229*^9, 3.8014680013585978`*^9}, {3.801468073111724*^9, 
+   3.8014682340470343`*^9}, {3.801468331711526*^9, 3.8014687885586863`*^9}, 
+   3.8014689169210587`*^9, {3.801468960443942*^9, 3.801468964231113*^9}, {
+   3.801468995520505*^9, 3.8014689961315413`*^9}, {3.80146903858396*^9, 
+   3.8014691938942347`*^9}, {3.80146922391507*^9, 3.801469269713354*^9}, {
+   3.8014693401013403`*^9, 3.801469526805578*^9}, 3.8014696951472816`*^9, {
+   3.801469745570006*^9, 3.8014698415878353`*^9}},
+ CellLabel->"In[14]:=",ExpressionUUID->"b8590d6c-a0e8-47f1-b1d2-c1a592741185"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {Cell[
+     "EMT\:5b9a\:4e49",ExpressionUUID->
+      "9c127d71-9917-4551-94d2-9bc3dfdc7798"], Cell["\<\
+\:4e0a\:76ae-\:95f4\:5145\:8d28\:8f6c\:53d8\:ff08EMT\:ff09\:662f\:4e00\:4e2a\
+\:8fc7\:7a0b\:ff0c
+\:901a\:8fc7\:8be5\:8fc7\:7a0b\:4e0a\:76ae\:7ec6\:80de\:5931\:53bb\:7ec6\:80de\
+\:6781\:6027\:548c\:7ec6\:80de\:95f4\:7c98\:9644\:529b\:ff0c\:5e76\:83b7\:5f97\
+\:8fc1\:79fb\:548c\:4fb5\:88ad\:7279\:6027\:ff0c\:6210\:4e3a\:95f4\:5145\:8d28\
+\:5e72\:7ec6\:80de\:3002
+\:8fd9\:4e9b\:662f\:80fd\:5206\:5316\:4e3a\:591a\:79cd\:7ec6\:80de\:7c7b\:578b\
+\:7684\:591a\:80fd\:57fa\:8d28\:7ec6\:80de\
+\>",ExpressionUUID->"04112bbe-11af-470c-a05d-4ec406bb66e1"], "\[Placeholder]"},
+    {Cell["\<\
+\:4e0a\:76ae\:7ec6\:80de\
+\>",ExpressionUUID->"17845583-3132-47d1-af45-22a3144d19c4"], Cell["\<\
+\:4e0a\:76ae\:662f\:52a8\:7269\:7ec4\:7ec7\:7684\:56db\:79cd\:57fa\:672c\:7c7b\
+\:578b\:4e4b\:4e00\:ff0c\:904d\:5e03\:6574\:4e2a\:4eba\:4f53\:7684\:8840\:7ba1\
+\:548c\:5668\:5b98\:7684\:8154\:548c\:8868\:9762\
+\>",ExpressionUUID->"7fdf4bd8-12d9-4b59-87dc-2fcdce59d289"], "\[Placeholder]"},
+    {Cell[
+     "\:7279\:70b9",ExpressionUUID->"fcb0467f-5ac2-43e9-8711-93f8a3e5f94e"], 
+     Cell["\:5355\:5c42\:6216\:5206\:5c42",ExpressionUUID->
+      "a360562f-37d5-4d16-b01a-86321fc9f91d"], "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "\:7a33\:5b9a\:7684\:7c98\:9644",ExpressionUUID->
+      "2da31904-255b-4a13-a47f-8b7c9363edff"], "\[Placeholder]"},
+    {Cell[
+     "\:95f4\:5145\:8d28\:7ec6\:80de",ExpressionUUID->
+      "8118eeab-fed1-4cae-b541-4f26b19d488f"], Cell[
+     "\:95f4\:5145\:8d28\:662f\:4e00\:79cd\:7ec4\:7ec7\:ff0c\:5176\:7279\:5f81\
+\:662f\:5177\:6709\:677e\:6563\:76f8\:5173\:7684\:7ec6\:80de\:ff0c\:7f3a\:4e4f\
+\:6781\:6027\:ff0c\:88ab\:5927\:7684\:7ec6\:80de\:5916\:57fa\:8d28\:5305\:56f4\
+\:3002",ExpressionUUID->"56c2ef51-7b9a-4b6e-ac13-1e67fd58067a"], 
+     "\[Placeholder]"},
+    {Cell[
+     "\:7279\:5f81",ExpressionUUID->"bee54965-358d-4595-a8d1-1dfe3787896c"], 
+     Cell[
+     "\:4e0d\:89c4\:5219\:6392\:5217\:ff0c\:65e0\:5206\:5c42",ExpressionUUID->
+      "c693d917-9cb7-4794-b43e-a1a0f746457b"], "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "\:7f3a\:4e4f\:7ec6\:80de\:95f4\:6216ECM\:8fde\:63a5\:ff0c\:8fde\:63a5\
+\:5f31",ExpressionUUID->"9fdf216c-02a8-4d0c-907d-c26b3088ab11"], 
+     "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "\:6839\:5c16\:ff0d\:57fa\:5e95\:5916\:4fa7\:6781\:5316\:7684\:4e27\:5931\
+\:ff0c\:65e0\:6781\:6027",ExpressionUUID->
+      "c0e5d4e6-d235-4149-a2c1-a2a9044df19f"], "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "\:8fd0\:52a8\:548c\:4fb5\:88ad\:ff0c\:4fb5\:88ad\:6027",ExpressionUUID->
+      "8de03c73-df83-4759-9621-03bcb11934b1"], "\[Placeholder]"},
+    {Cell[
+     "EMT\:6b65\:9aa4",ExpressionUUID->
+      "5f821508-06f6-42b7-a72c-f86f2adb126e"], Cell[
+     "\:8bf1\:53d1\:56e0\:7d20",ExpressionUUID->
+      "49b8c186-c969-4e68-986e-e8aa030516ab"], "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "\:7ec6\:80de\:9aa8\:67b6\:91cd\:6784\:ff0c\:5411\:5fc3\:6027\:6536\:7f29\
+",ExpressionUUID->"6e3fd8e2-3434-497b-b0aa-faaf699c71ff"], "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "\:7eb5\:5411\:5ef6\:4f38",ExpressionUUID->
+      "554dab8d-6b4b-4232-922d-444d1628e6e3"], "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "\:8131\:79bb\:57fa\:5e95\:819c",ExpressionUUID->
+      "75e86ceb-6fdc-4fe5-b773-b9e0f27e3353"], "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "\:4f38\:51fa\:7a81\:8d77",ExpressionUUID->
+      "e43541c7-4a72-474b-a5cf-6cb904658b38"], "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "\:7834\:574f\:57fa\:5e95\:819c",ExpressionUUID->
+      "16610a4a-0b7c-476d-9219-44e2028abfb4"], "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "\:8868\:8fbe\:95f4\:8d28\:7ec6\:80de\:7684\:7c98\:9644\:5206\:5b50\:81f3\
+\:8131\:843d",ExpressionUUID->"e517bc00-9409-4774-a972-cf40be782ff0"], 
+     "\[Placeholder]"},
+    {Cell[
+     "EMT\:6807\:5fd7\:7269marker",ExpressionUUID->
+      "9334fdcf-58de-4838-8f07-96f118dcb84e"], Cell["\<\
+\:4e0a\:76ae\:6807\:5fd7\:7269\
+\>",ExpressionUUID->"da96136e-46e2-4d7e-8a62-f8fe3a312e60"], Cell[
+     "E-cadherin",ExpressionUUID->"11a95906-4525-40dd-afad-6f090d0ca0d4"]},
+    {"\[SpanFromAbove]", "\[SpanFromAbove]", Cell[
+     "\[Alpha]-catenin",ExpressionUUID->
+      "816b2654-2c08-4701-bbc3-3ad1749f1797"]},
+    {"\[SpanFromAbove]", "\[SpanFromAbove]", Cell[
+     "\[Gamma]-catenin",ExpressionUUID->
+      "3bc6ff55-e194-4ca8-9436-49859302d281"]},
+    {"\[SpanFromAbove]", Cell[
+     "\:95f4\:5145\:8d28\:7269",ExpressionUUID->
+      "5fa30743-3abc-4e28-90e8-71b8ddc00f9b"], Cell[
+     "Vimentin",ExpressionUUID->"37f5ade7-bfe3-4777-8e4d-6dc5ba589033"]},
+    {"\[SpanFromAbove]", "\[SpanFromAbove]", Cell[
+     "Fibronectin",ExpressionUUID->"49b230b7-e6d7-44f7-a771-62f6ab338566"]},
+    {"\[SpanFromAbove]", "\[SpanFromAbove]", Cell[
+     "N-cadherin",ExpressionUUID->"a5f3eb05-de31-4107-b816-11ba03fc14ca"]},
+    {Cell[
+     "EMT\:8bf1\:5bfc\:7269inducer",ExpressionUUID->
+      "989f3b3c-7684-4e14-bb28-81aa09882ebc"], Cell[
+     "\:8f6c\:5f55\:56e0\:5b50",ExpressionUUID->
+      "42320b53-64bb-4ee5-893c-8620a7c67a46"], Cell[
+     "Snail,Twist,ZEB",ExpressionUUID->
+      "941a6d04-6d4d-4975-a628-95f4ffb5300f"]},
+    {"\[SpanFromAbove]", Cell[
+     "TGF\[Beta]-\:8bf1\:5bfc\:7684EMT",ExpressionUUID->
+      "1c9b3d71-1f79-4655-a844-23f1ded8e439"], Cell[
+     "smad/non-smad",ExpressionUUID->
+      "f99d3572-cfe1-4286-8752-a1fa3c665fc4"]},
+    {"\[SpanFromAbove]", Cell[
+     "\:6d89\:53caEMT\:7684\:4fe1\:53f7\:901a\:8def",ExpressionUUID->
+      "56bd482d-c0be-48be-812e-df437a8b217c"], Cell[
+     "PI3K-AKT,Wnt,ERK-MAPK",ExpressionUUID->
+      "fe2cea8e-bf8c-463a-8471-09b6ac192228"]},
+    {"\[SpanFromAbove]", Cell[
+     "\:589e\:957f\:56e0\:5b50",ExpressionUUID->
+      "6f73c37e-492d-4af9-937a-0f954f2b6f8f"], Cell["\<\
+Wnt/Wingless,Hedgehog(Hh),
+TGF-/BMP,FGF,Morphogen,HGF&HGFR,
+IGF-1,EGF,PDGF\
+\>",ExpressionUUID->"f703e518-9f41-4360-9888-9af7f7f0af07"]},
+    {"\[SpanFromAbove]", Cell[
+     "microRNA",ExpressionUUID->"bd9acedb-b13a-4a38-b974-9990299432ec"], Cell[
+     "miR-200",ExpressionUUID->"a870250b-b249-422a-a1be-91421101626d"]},
+    {Cell[
+     "EMT\:8fc7\:7a0b\:4e2d\:7684\:53d8\:5316",ExpressionUUID->
+      "4a6c4a49-10e3-49c3-bba8-312d0710c4a2"], Cell[
+     "\:5931\:53bb\:6781\:6027",ExpressionUUID->
+      "8af36b24-611b-405e-ae63-5d798482ce70"], "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "\:7ec6\:80de\:9aa8\:67b6\:7684\:6539\:53d8",ExpressionUUID->
+      "39a57bf6-9a13-407c-9e84-fcb00158e61c"], "\[Placeholder]"},
+    {Cell[
+     "EMT\:4e0e\:751f\:7406\:8fc7\:7a0b\:7684\:5173\:7cfb",ExpressionUUID->
+      "8969b99c-c23f-4a07-8b91-de14aed528a1"], Cell[
+     "\:53d1\:80b2",ExpressionUUID->"ab566410-ec00-4b3f-b475-69b0b9e8d794"], 
+     Cell["\<\
+\:810a\:7d22\:52a8\:7269\:7684\:795e\:7ecf\:80da\:5f62\:6210\:ff1a\:4e09\:4e2a\
+\:80da\:5c42\:7684\:5f62\:6210\:ff08\:8054\:7cfb\:4e0a\:6587\:8bf4\:7684\:751f\
+\:957f\:56e0\:5b50\:73af\:8def\:8bf4\:660e\:ff09\
+\>",ExpressionUUID->"4989c8f7-a0d7-4e08-bf26-36b9ecad8648"]},
+    {"\[SpanFromAbove]", Cell[
+     "\:7ea4\:7ef4\:5316",ExpressionUUID->
+      "43c3f888-ad0c-4473-a6d4-16c2699682e4"], Cell[
+     "\:80be\:7ea4\:7ef4\:5316Renal \
+Fibrosis\:ff1b\:7ec4\:7ec7\:4e2d\:7684EMT",ExpressionUUID->
+      "a7522503-6aea-4afd-a6a9-f5de97db8ce3"]},
+    {"\[SpanFromAbove]", Cell[
+     "EMT\:548c\:80bf\:7624\:8fdb\:5c55",ExpressionUUID->
+      "713fad79-1e1c-42f5-b106-05c564d9d12b"], Cell["\<\
+EMT\:662f\:4e0a\:76ae\:884d\:751f\:80bf\:7624\:6076\:6027\:80bf\:7624\:7684\
+\:4e3b\:8981\:9a71\:52a8\:529b\
+\>",ExpressionUUID->"4dedd313-9c47-4b6f-84d1-0ddffe0e8ec7"]},
+    {"\[SpanFromAbove]", "\[SpanFromAbove]", Cell[
+     "\:4ece\:90a3\:4ee5\:540e\:ff0cEMT\:5df2\:88ab\:8bc1\:660e\:53ef\:89e6\
+\:53d1\:764c\:7ec6\:80de\:4ece\:539f\:53d1\:6027\:764c\:4e2d\:89e3\:79bb\:ff0c\
+\:968f\:540e\:5176\:8fc1\:79fb\:5e76\:6269\:6563\:5230\:8fdc\:5904\:3002",
+      ExpressionUUID->"502b7483-8cf4-455a-bb30-d145658fc5dd"]},
+    {Cell[
+     "\:5176\:4ed6\:5173\:7cfb",ExpressionUUID->
+      "4448e90a-ff69-42fb-b0e9-84546a730ad4"], Cell[
+     "EMT\:548c\:80bf\:7624\:8fdb\:5c55",ExpressionUUID->
+      "67158156-1a01-44f4-8111-01720931d21d"], "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "EMT\:548c\:80bf\:7624\:5fae\:73af\:5883",ExpressionUUID->
+      "12b71bf6-a3f9-47e5-9d9e-7f5b6ef68639"], "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "EMT\:5bfc\:81f4\:65b0\:9648\:4ee3\:8c22\:548c\:6781\:5316\:901a\:8def",
+      ExpressionUUID->"3015bfca-3c8c-4ec7-8fb7-416661fc762b"], 
+     "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "EMT\:548c\:80bf\:7624\:5e72\:7ec6\:80de",ExpressionUUID->
+      "677f5243-f11d-4560-9d4e-1e0d0781e90d"], "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "EMT\:671f\:95f4\:53d1\:751f\:7684\:5176\:4ed6\:526a\:63a5\:66f4\:6539",
+      ExpressionUUID->"bd356116-832c-4d00-8089-08579c6ee1d9"], 
+     "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "EMT\:548c\:836f\:7269\:62b5\:6297",ExpressionUUID->
+      "d2ea9e69-a69f-4ec7-b34b-bd1c6c4a995e"], "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "EMT\:548c\:5931\:5de2\:51cb\:4ea1\:62b5\:6297",ExpressionUUID->
+      "40b13ded-7088-4775-9802-030091515542"], "\[Placeholder]"},
+    {"\[SpanFromAbove]", Cell[
+     "EMT\:548c\:514d\:75ab\:6291\:5236",ExpressionUUID->
+      "97736cdb-86ce-44f0-898a-d66f8a4eafd6"], "\[Placeholder]"}
+   },
+   AutoDelete->False,
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "TextGrid"]], "Output",
+ CellChangeTimes->{{3.801454995080724*^9, 3.801455004618472*^9}, 
+   3.801468583968216*^9, 3.8014686496833*^9, 3.801469842624531*^9},
+ CellLabel->"Out[14]=",ExpressionUUID->"8a7c501b-7f50-4594-bec0-c5e9b9c9dfb4"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"TextGrid", "[", "\[IndentingNewLine]", 
+   RowBox[{"(", GridBox[{
+      {"\"\<\:57fa\:672c\:6982\:5ff5\>\"", "\[Placeholder]"},
+      {"\"\<\:7ec6\:80de\:5fc5\:987b\:80fd\:591f\:590d\:5236\>\"", 
+       "\[Placeholder]"},
+      {"\[Placeholder]", "\[Placeholder]"}
+     }], ")"}], "\[IndentingNewLine]", "]"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.8014707753280897`*^9, 3.8014707784284573`*^9}, {
+  3.801470857363192*^9, 3.801470897369204*^9}, {3.8014711304720488`*^9, 
+  3.8014711729495687`*^9}, {3.801471203462297*^9, 3.8014712254118853`*^9}, {
+  3.801471284740273*^9, 3.801471310666237*^9}, {3.801471355323059*^9, 
+  3.8014715008025837`*^9}},ExpressionUUID->"e290291b-abdb-41ce-9a8b-\
+2ae9fa7be813"],
+
+Cell[BoxData[
+ RowBox[{"TextGrid", "[", 
+  RowBox[{"(", GridBox[{
+     {"\"\<\:57fa\:672c\:6982\:5ff5\>\"", "\[Placeholder]", "\[Placeholder]", 
+      "\[Placeholder]"},
+     {"\"\<\:7ec6\:80de\:5fc5\:987b\:80fd\:591f\:590d\:5236\>\"", 
+      "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"},
+     {"\[Placeholder]", "\"\<\:7ec6\:80de\:5468\:671f\:7684\:9636\:6bb5\>\"", 
+      "\"\<\:95f4\:671f\>\"", "\"\<G1:\:7ec6\:80de\:751f\:957f\>\""},
+     {"\[Placeholder]", "\[Placeholder]", "SpanFromAbove", 
+      "\"\<S:DNA\:5408\:6210\>\""},
+     {"\[Placeholder]", "\[Placeholder]", "SpanFromAbove", 
+      "\"\<G2:\:4fdd\:771f\:5ea6\:68c0\:67e5\>\""},
+     {"\[Placeholder]", "\[Placeholder]", "\"\<\:5206\:88c2\:671f\>\"", 
+      "\"\<\:6709\:4e1d\:5206\:88c2\>\""},
+     {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", 
+      "\"\<\:80de\:8d28\:5206\:88c2\>\""},
+     {"\[Placeholder]", "\[Placeholder]", "\[Placeholder]", "\[Placeholder]"}
+    }], ")"}], "]"}]], "Input",
+ CellChangeTimes->{{3.801471502256402*^9, 
+  3.801471560907542*^9}},ExpressionUUID->"c3e32559-5703-47e7-b75b-\
+2eacf56731d0"]
+},
+WindowSize->{683, 716},
+WindowMargins->{{Automatic, 0}, {0, Automatic}},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 8036, 137, 1451, "Input",ExpressionUUID->"01d861f9-706e-4844-9fcb-9c0f66633f7e"],
+Cell[8619, 161, 6390, 116, 484, "Output",ExpressionUUID->"bcc6610c-1e85-4f88-93ea-93059a6810ca"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15046, 282, 6632, 101, 1150, "Input",ExpressionUUID->"6af337b1-96a7-4593-b2ad-f2b83a70dc2a"],
+Cell[21681, 385, 8058, 137, 1826, "Output",ExpressionUUID->"03714a19-140a-4ad9-a6e1-55c5228a43c5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29776, 527, 7221, 130, 1914, "Input",ExpressionUUID->"b8590d6c-a0e8-47f1-b1d2-c1a592741185"],
+Cell[37000, 659, 9933, 192, 1424, "Output",ExpressionUUID->"8a7c501b-7f50-4594-bec0-c5e9b9c9dfb4"]
+}, Open  ]],
+Cell[46948, 854, 760, 15, 159, "Input",ExpressionUUID->"e290291b-abdb-41ce-9a8b-2ae9fa7be813"],
+Cell[47711, 871, 1110, 21, 212, "Input",ExpressionUUID->"c3e32559-5703-47e7-b75b-2eacf56731d0"]
+}
+]
+*)
+
